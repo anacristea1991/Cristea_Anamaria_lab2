@@ -5,25 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cristea_Anamaria_Lab2"
         mc:Ignorable="d"
-        Title="Virtual Doughnuts Factory" Height="450" Width="800" SizeToContent="Manual" ResizeMode="NoResize" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
+        Title="Virtual Doughnuts Factory" Height="570" Width="840" SizeToContent="Manual" ResizeMode="NoResize" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
     <Grid>
-        <Label x:Name="lblTitle" Content=" Doughnuts - Bake &amp; Sale" HorizontalAlignment="Left" Margin="91,46,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
-        <GroupBox x:Name="gbRaised" Header="Raised" Margin="29,110,560,203" FontWeight="Bold">
-            <Canvas/>
+        <Label x:Name="lblTitle" Content=" Doughnuts - Bake &amp; Sale" HorizontalAlignment="Left" Margin="91,30,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+        <GroupBox x:Name="gbRaised" Header="Raised" Margin="123,110,510,303" FontWeight="Bold">
+            <Canvas>
+                <Label x:Name="lblGlazedRaised" Content="Glazed" Canvas.Left="10" Canvas.Top="3" FontWeight="Normal" FontSize="16"/>
+                <TextBox x:Name="txtGlazedRaised" Canvas.Left="90" Canvas.Top="10" Text="0" TextWrapping="Wrap" Width="60" IsReadOnly="True" RenderTransformOrigin="0.51,1.458" Height="24" FontSize="16"/>
+                <Label x:Name="lblSugarRaised" Content="Sugar" Canvas.Left="10" Canvas.Top="46" RenderTransformOrigin="-2.1,1.075" FontWeight="Normal" FontSize="16"/>
+                <TextBox x:Name="txtSugarRaised" Canvas.Left="90" Canvas.Top="53" Text="0" TextWrapping="Wrap" Width="60" IsReadOnly="True" Height="24" FontSize="16"/>
+            </Canvas>
         </GroupBox>
-        <GroupBox x:Name="gbFilled" Header="Filled" Margin="335,110,175,200" FontWeight="Bold"/>
-        <Canvas>
-            <Label x:Name="lblGlazedRaised" Content="Glazed" Canvas.Left="49" Canvas.Top="141"/>
-            <TextBox x:Name="txtGlazedRaised" Canvas.Left="114" Canvas.Top="145" Text="0" TextWrapping="Wrap" Width="120" IsReadOnly="True"/>
-            <Label x:Name="lblSugarRaised" Content="Sugar" Canvas.Left="49" Canvas.Top="191" RenderTransformOrigin="-2.1,1.075"/>
-            <TextBox x:Name="txtSugarRaised" Canvas.Left="114" Canvas.Top="195" Text="0" TextWrapping="Wrap" Width="120" IsReadOnly="True"/>
-            <Label x:Name="lblLemonFilled" Content="Lemon" Canvas.Left="354" Canvas.Top="132"/>
-            <TextBox x:Name="txtLemonFilled" Canvas.Left="427" Canvas.Top="136" Text="0" TextWrapping="Wrap" Width="120" IsReadOnly="True"/>
-            <Label x:Name="lblChocolateFilled" Content="Chocolate" Canvas.Left="345" Canvas.Top="163"/>
-            <TextBox Text="TextBox" TextWrapping="Wrap" Width="120"/>
-            <TextBox x:Name="txtChocolateFilled" Canvas.Left="427" Canvas.Top="167" Text="0" TextWrapping="Wrap" Width="120" IsReadOnly="True"/>
-            <Label x:Name="lblVanillaFilled" Content="Vanilla" Canvas.Left="354" Canvas.Top="194"/>
-            <TextBox x:Name="txtVanillaFilled" Canvas.Left="427" Canvas.Top="199" Text="0" TextWrapping="Wrap" Width="120" IsReadOnly="True"/>
-        </Canvas>
+        <GroupBox x:Name="gbFilled" Header="Filled" Margin="371,110,207,303" FontWeight="Bold">
+            <Canvas>
+                <Label x:Name="lblLemonFilled" Content="Lemon" Canvas.Left="10" Canvas.Top="10" FontWeight="Normal" RenderTransformOrigin="-7.171,-3.859" FontSize="16"/>
+                <TextBox x:Name="txtLemonFilled" Canvas.Left="107" Canvas.Top="18" Text="0" TextWrapping="Wrap" Width="60" IsReadOnly="True" Height="24" FontSize="16"/>
+                <Label x:Name="lblChocolateFilled" Content="Chocolate" Canvas.Left="10" Canvas.Top="46" FontSize="16" FontWeight="Normal"/>
+                <TextBox x:Name="txtChocolateFilled" Canvas.Left="107" Canvas.Top="50" Text="0" TextWrapping="Wrap" Width="60" IsReadOnly="True" Height="24" FontSize="16"/>
+                <Label x:Name="lblVanillaFilled" Content="Vanilla" Canvas.Left="10" Canvas.Top="82" FontSize="16" FontWeight="Normal"/>
+                <TextBox x:Name="txtVanillaFilled" Canvas.Left="107" Canvas.Top="86" Text="0" TextWrapping="Wrap" Width="60" IsReadOnly="True" Height="24" FontSize="16"/>
+            </Canvas>
+        </GroupBox>
+
     </Grid>
 </Window>
