@@ -6,5 +6,12 @@
         xmlns:local="clr-namespace:Cristea_Anamaria_Lab2"
         mc:Ignorable="d"
         Title="Virtual Doughnuts Factory" Height="450" Width="800" SizeToContent="Manual" ResizeMode="NoResize" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
-    <Grid/>
+    <Grid>
+        <Label x:Name="lblTitle" Content=" Doughnuts - Bake &amp; Sale" HorizontalAlignment="Left" Margin="91,46,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+        <GroupBox x:Name="gbRaised" Header="Raised" Margin="29,110,560,203" FontWeight="Bold">
+            <Canvas/>
+        </GroupBox>
+        <GroupBox x:Name="gbFilled" Header="Filled" Margin="335,110,175,200" FontWeight="Bold"/>
+        <Canvas/>
+    </Grid>
 </Window>
