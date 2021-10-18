@@ -25,6 +25,7 @@ Width="131" Margin="0,0,0,0">
                     </MenuItem>
                 </MenuItem>
                 <MenuItem x:Name="mnuStop" Header="Stop" Click="stopToolStripMenuItem_Click"/>
+                <MenuItem Header="Inventory" Command="ApplicationCommands.Print"></MenuItem>
             </MenuItem>
         </Menu>
         <Label x:Name="lblTitle" Content=" Doughnuts - Bake &amp; Sale" HorizontalAlignment="Left" Margin="91,30,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>

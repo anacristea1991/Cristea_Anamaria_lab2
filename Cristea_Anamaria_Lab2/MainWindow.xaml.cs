@@ -37,6 +37,14 @@ namespace Cristea_Anamaria_Lab2
         public MainWindow()
         {
             InitializeComponent();
+            //creare obiect binding pentru comanda
+            CommandBinding cmd1 = new CommandBinding();
+            //asociere comanda
+            cmd1.Command = ApplicationCommands.Print;
+            //asociem un handler
+            cmd1.Executed += new ExecutedRoutedEventHandler(CtrlP_CommandHandler);
+            //adaugam la colectia CommandBindings
+            this.CommandBindings.Add(cmd1);
         }
 
         private void frmMain_Loaded(object sender, RoutedEventArgs e)
@@ -206,6 +214,12 @@ namespace Cristea_Anamaria_Lab2
                         break;
                 }
             }
+        }
+        private void CtrlP_CommandHandler(object sender, ExecutedRoutedEventArgs e)
+        {
+            MessageBox.Show(@"You have in stock:" + mRaisedGlazed + " Glazed," + mRaisedSugar + " Sugar, "+
+                mFilledLemon+" Lemon, "+mFilledChocolate+" Chocolate, "+mFilledVanilla+" Vanilla"
+           );
         }
     }
 }
