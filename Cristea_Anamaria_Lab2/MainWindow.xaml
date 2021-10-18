@@ -51,12 +51,12 @@ Width="131" Margin="0,0,0,0">
                 <Label x:Name="lblQuantity" Content="Quantity" Canvas.Left="10" Canvas.Top="21" FontWeight="Normal"/>
                 <TextBox x:Name="txtQuantity" Canvas.Left="86" Canvas.Top="25" Text="0" TextWrapping="Wrap" Width="60" RenderTransformOrigin="0.51,1.458" Height="24" FontSize="16" KeyDown="txtQuantity_KeyDown"/>
                 <Label x:Name="lblType" Content="Type" Canvas.Left="166" Canvas.Top="21" FontWeight="Normal"/>
-                <ComboBox x:Name="cmbType" Canvas.Left="214" Canvas.Top="25" Width="120"/>
+                <ComboBox x:Name="cmbType" Canvas.Left="214" Canvas.Top="25" Width="120" SelectionChanged="cmbType_SelectionChanged"/>
                 <Label x:Name="lblPrice" Content="Price" Canvas.Left="356" Canvas.Top="21" FontWeight="Normal" RenderTransformOrigin="0.093,0.723"/>
                 <ListBox x:Name="lstSale" Height="122" Width="481" Canvas.Top="71" Canvas.Left="12"/>
                 <Label x:Name="lblTotal" Content="Total" Canvas.Left="298" Canvas.Top="203" FontWeight="Bold" RenderTransformOrigin="0.093,0.723"/>
-                <Button x:Name="btnAddToSale" Content="Add To Sale" Canvas.Left="513" Canvas.Top="100" FontWeight="Normal" Width="115" Height="32"/>
-                <Button x:Name="btnRemoveItem" Content="Remove Item" Canvas.Left="513" Canvas.Top="137" FontWeight="Normal" Width="115" Height="32" RenderTransformOrigin="0.532,1.572"/>
+                <Button x:Name="btnAdd" Content="Add To Sale" Canvas.Left="513" Canvas.Top="100" FontWeight="Normal" Width="115" Height="32" Click="btnAdd_Click"/>
+                <Button x:Name="btnRemoveItem" Content="Remove Item" Canvas.Left="513" Canvas.Top="137" FontWeight="Normal" Width="115" Height="32" RenderTransformOrigin="0.532,1.572" Click="btnRemoveItem_Click"/>
                 <Button x:Name="btnCheckOut" Content="Checkout" Canvas.Left="513" Canvas.Top="202" FontWeight="Bold" Width="115" Height="32" RenderTransformOrigin="0.532,1.572"/>
                 <TextBox x:Name="txtPrice" Canvas.Left="405" Canvas.Top="25" Text="0" TextWrapping="Wrap" Width="60" RenderTransformOrigin="0.51,1.458" Height="24" FontSize="16"/>
                 <TextBox x:Name="txtTotal" Canvas.Left="375" Canvas.Top="207" Text="0" TextWrapping="Wrap" Width="118" RenderTransformOrigin="0.51,1.458" Height="24" FontSize="16"/>
